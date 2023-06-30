@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import EmailIcon from "@material-ui/icons/Email"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import GithubIcon from "@material-ui/icons/GitHub"
 import "../Styles/Home.css"
 import Typewriter from "typewriter-effect"
 import Confetti from 'react-confetti'
-
+import TextSphere from '../components/TextSphere'
 
 function Home() {
   return (
@@ -15,13 +15,13 @@ function Home() {
       <div className="into">
       <h2>      <Typewriter 
         onInit={(typewriter) => {
-          typewriter.typeString("Welcome to my site!")
+          typewriter.typeString("Welcome, glad to have you here!")
           .pauseFor(2000)
           .deleteAll()
-          .typeString("I study Computer Science at TMU")
+          .typeString("I am a Fourth Year Computer Science student at TMU")
           .pauseFor(2000)
           .deleteAll()
-          .typeString("My name is Arshdeep Badhan")
+          .typeString("My name is Arshdeep Badhan!")
           .start();
         }}
       /></h2>
@@ -40,6 +40,7 @@ function Home() {
         <ol className='list'>
           <li className='item'>
             <h2>Tools and Technologies</h2>
+            <TextSphere/>
             <span>VSCode, Android Studio, React, Git, Linux, Azure, PowerBi, Emacs, Pharo, Databases</span>
           </li>
           <li className='item'>

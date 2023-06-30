@@ -73,11 +73,29 @@ function Experience() {
             Bruce Power
           </h4>
 
-          <p>Gained experience working with ETL, Power Bi, SQL, Batch Uploads, Database, and Powershell
-          </p>
+          <p>Gained experience working with ETL, Power Bi, SQL, Batch Uploads, Database, and Powershell</p>
 
         </VerticalTimelineElement>
 
+        
+        <VerticalTimelineElement
+          className="vertical-timeline-element-title"
+          date="2023"
+          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Junior Programmer Analyst, Remote
+          </h3>
+
+          <h4 className="vertical-timeline-element-subtitle">
+            Royal Canadian Mounted Police
+          </h4>
+
+          <p>Gained experience with managing cloud application on Microsoft Azure: Cloud Computing Software
+          </p>
+
+        </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
   );
