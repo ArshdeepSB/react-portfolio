@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import EmailIcon from "@material-ui/icons/Email"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import GithubIcon from "@material-ui/icons/GitHub"
@@ -6,6 +6,7 @@ import "../Styles/Home.css"
 import Typewriter from "typewriter-effect"
 import Confetti from 'react-confetti'
 import TextSphere from '../components/TextSphere'
+import SmoothList from '../components/SmoothList'
 
 function Home() {
   return (
@@ -40,12 +41,14 @@ function Home() {
         <ol className='list'>
           <li className='item'>
             <h2>Tools and Technologies</h2>
-            <TextSphere/>
-            <span>VSCode, Android Studio, React, Git, Linux, Azure, PowerBi, Emacs, Pharo, Databases</span>
+            <TextSphere texts={["VSCode", "Android Studio", "React", "Git", "Linux", "Azure", "PowerBi", "Emacs", "Pharo", "Databases"]}/>
           </li>
           <li className='item'>
             <h2>Languages</h2>
-            <span>Java, Python, C, Rust, HTML, CSS, JavaScript, Elixir, SmallTalk, Lisp, Perl, SQL, Scripting</span>
+            
+            <h5>Order Doesn't Matter When You Know The Basics! </h5>
+
+            <SmoothList items={["Java", "Python", "C", "Rust", "HTML", "CSS", "JavaScript", "Elixir", "SmallTalk", "Lisp", "Perl", "SQL", "Scripting"]}/>
           </li>
         </ol>
       </div> </div>

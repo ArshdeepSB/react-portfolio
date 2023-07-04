@@ -1,38 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/TextSphere.css";
 
 // Importing TagCloud package
 import TagCloud from "TagCloud";
 
-const TextSphere = () => {
+function TextSphere(texts){
   // Animation settings for Text Cloud
   useEffect(() => {
     return () => {
       const container = ".tagcloud";
-      const texts = [
-        "HTML",
-        "CSS",
-        "SASS",
-        "JavaScript",
-        "React",
-        "Vue",
-        "Nuxt",
-        "NodeJS",
-        "Babel",
-        "Jquery",
-        "ES6",
-        "GIT",
-        "GITHUB",
-      ];
-
+      // const texts = ["VSCode", "Android Studio", "React", "Git", "Linux", "Azure", "PowerBi", "Emacs", "Pharo", "Databases"];
       const options = {
         radius: 300,
-        maxSpeed: "normal",
+        maxSpeed: "fast",
         initSpeed: "normal",
         keep: true,
       };
 
-      TagCloud(container, texts, options);
+      TagCloud(container, texts.texts, options);
     };
   }, []);
 

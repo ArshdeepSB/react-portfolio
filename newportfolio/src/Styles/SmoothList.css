@@ -1,0 +1,9 @@
+.langlist {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #999;
+    text-align: right;
+    font-style: italic;
+    padding: 5px 8px;
+    border-radius: 6px;
+}
