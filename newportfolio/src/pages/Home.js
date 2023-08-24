@@ -46,9 +46,12 @@ function Home() {
           <li className='item'>
             <h2>Languages</h2>
             
-            <h5>Order Doesn't Matter When You Know The Basics! </h5>
-
-            <SmoothList items={["Java", "Python", "C", "Rust", "HTML", "CSS", "JavaScript", "Elixir", "SmallTalk", "Lisp", "Perl", "SQL", "Scripting"]}/>
+            <h5>Order Doesn't Matter When You Know The Science! </h5>
+            <div className='orderList'>
+               <SmoothList items={["Java", "Python", "C", "Rust", "HTML", "CSS", "JavaScript"]}/>
+               <SmoothList items={["Elixir", "SmallTalk", "Lisp", "Perl", "SQL", "Scripting"]}/>
+            </div>
+           
           </li>
         </ol>
       </div> </div>
