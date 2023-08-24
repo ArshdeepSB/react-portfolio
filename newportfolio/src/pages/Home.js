@@ -41,6 +41,7 @@ function Home() {
         <ol className='list'>
           <li className='item'>
             <h2>Tools and Technologies</h2>
+            <h5>Always learning and adapting!</h5>
             <TextSphere texts={["VSCode", "Android Studio", "React", "Git", "Linux", "Azure", "PowerBi", "Emacs", "Pharo", "Databases"]}/>
           </li>
           <li className='item'>
