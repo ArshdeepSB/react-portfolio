@@ -7,6 +7,8 @@ import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
 import "../Styles/Experience.css";
+import StarIcon from "@material-ui/icons/StarRate"
+import Certificate from "@material-ui/icons/LineWeight"
 
 function Experience() {
   return (
@@ -60,7 +62,7 @@ function Experience() {
 
 
         <VerticalTimelineElement
-          className="vertical-timeline-element-title"
+          className="vertical-timeline-element--work"
           date="2022"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
@@ -79,7 +81,7 @@ function Experience() {
 
         
         <VerticalTimelineElement
-          className="vertical-timeline-element-title"
+          className="vertical-timeline-element--work"
           date="2023"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
@@ -96,6 +98,31 @@ function Experience() {
           </p>
 
         </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2023"
+          iconStyle={{ background: "#c51e01", color: "#fff" }}
+          icon={<Certificate />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            AZ-900 Azure Fundamentals
+          </h3>
+
+          <h4 className="vertical-timeline-element-subtitle">
+            Azure Certification
+          </h4>
+
+          <p>Fundamental cloud concepts like virtualization, scalability, and elasticity, along with core Azure services including virtual machines, storage, networking, and identity management.
+          </p>
+
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+          icon={<StarIcon />}
+        />
+
       </VerticalTimeline>
     </div>
   );
