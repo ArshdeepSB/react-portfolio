@@ -2,6 +2,7 @@ import lofiPic from "../assets/clock.jpg"
 import bingoPic from "../assets/bingo.jpg"
 import airplanePic from "../assets/airplane.jpg"
 import conversionPic from "../assets/Conversion.jpeg"
+import networks from "../assets/networks.jpg" 
 
 export const ProjectList = [
 {
@@ -29,8 +30,15 @@ export const ProjectList = [
     name: "Bingo Game",
     image: bingoPic,
     skills: "Linux, file IO, Error Handling, Matrix Manipulation, Searching, Structures, Unit Testing ",
-    links: "https://github.com/ArshdeepSB/Linux-Bingo-Game"
+    link: "https://github.com/ArshdeepSB/Linux-Bingo-Game"
 }, 
+
+{
+    name: "RoutingVisualizer",
+    image: networks,
+    skills: "Centralized and Decentralized Algorithms, Interactive, Javascript, P5.js",
+    link: "https://arshdeepsb.github.io/RoutingAlgoVisualizer"
+}
 
 
 ]
